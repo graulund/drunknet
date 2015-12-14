@@ -20,8 +20,22 @@
 
 
 	// Oft-used searches:
+
 	// -- One emote only, properly typed
-	// ^(\[#[^\]]+\])?\s*\[[0-9 -:.]+\]\s*\*?\s+<?[a-z]+>?\s*(Kappa|Keepo|Kreygasm|PogChamp|danBad|danYay|OpieOP|EleGiggle|ElecGiggle|OMGScoots|BibleThump|OneHand|BigBrother|4Head|SwiftRage|MVGame|<3|:\)|:\(|>\()\n
+	// ^(\[#[^\]]+\])?\s*\[[0-9 -:.]+\]\s*\*?\s+<?[a-z]+>?\s*(Kappa|Keepo|Kreygasm|PogChamp|danBad|danYay|OpieOP|EleGiggle|ElecGiggle|OMGScoots|BibleThump|BabyRage|OneHand|BigBrother|4Head|SwiftRage|MVGame|ResidentSleeper|DansGame|<3|:\)|:\(|>\()\n
+
 	// -- One character
 	// ^(\[#[^\]]+\])?\s*\[[0-9 -:.]+\]\s*\*?\s+<?[a-z]+>?\s*.\n
+
+	// -- Repeating emotes, properly typed
+	// ^(\[#[^\]]+\])?\s*\[[0-9 -:.]+\]\s*\*?\s+<?[a-z]+>?\s*((Kappa|Keepo|Kreygasm|PogChamp|danBad|danYay|OpieOP|EleGiggle|ElecGiggle|OMGScoots|BibleThump|BabyRage|OneHand|BigBrother|4Head|SwiftRage|MVGame|ResidentSleeper|DansGame|<3|:\)|:\(|>\()\s*)+\n
+
+	// -- (Boring) greetings
+	// ^(\[#[^\]]+\])?\s*\[[0-9 -:.]+\]\s*\*?\s+<?[a-z]+>?\s*hi
+	// ^(\[#[^\]]+\])?\s*\[[0-9 -:.]+\]\s*\*?\s+<?[a-z]+>?\s*hel
+	// ^(\[#[^\]]+\])?\s*\[[0-9 -:.]+\]\s*\*?\s+<?[a-z]+>?\s*bye
+	// ^(\[#[^\]]+\])?\s*\[[0-9 -:.]+\]\s*\*?\s+<?[a-z]+>?\s*(Kappa|Keepo|Kreygasm|PogChamp|danBad|danYay|OpieOP|EleGiggle|ElecGiggle|OMGScoots|BibleThump|BabyRage|OneHand|BigBrother|4Head|SwiftRage|MVGame|ResidentSleeper|DansGame|<3|:\)|:\(|>\() /{1,2}\n
+
+	// -- (Boring) corrections
+	// ^(\[#[^\]]+\])?\s*\[[0-9 -:.]+\]\s*\*?\s+<?[a-z]+>?\s*i mean
 
